@@ -1,0 +1,1498 @@
+/* ==========================================================
+   BharatHire
+   candidate.css
+   Part 1
+   ========================================================== */
+
+/* ==========================================================
+   Candidate Profile Hero
+   ========================================================== */
+
+.profile-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:40px;
+
+    padding:35px;
+
+    margin-bottom:35px;
+
+}
+
+.profile-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:25px;
+
+    flex:1;
+
+}
+
+.profile-avatar{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:48px;
+
+    font-weight:700;
+
+    color:#fff;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    box-shadow:
+        0 15px 40px rgba(79,124,255,.35);
+
+}
+
+.profile-left h2{
+
+    font-size:36px;
+
+    margin-bottom:10px;
+
+}
+
+.profile-left p{
+
+    color:var(--text2);
+
+    margin-bottom:18px;
+
+    font-size:17px;
+
+}
+
+.profile-tags{
+
+    display:flex;
+
+    gap:12px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ==========================================================
+   Overall Score
+   ========================================================== */
+
+.profile-right{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.overall-score{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.score-circle{
+
+    width:190px;
+
+    height:190px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:8px solid rgba(79,124,255,.25);
+
+    background:rgba(255,255,255,.04);
+
+    box-shadow:
+
+        inset 0 0 35px rgba(79,124,255,.12),
+
+        0 20px 50px rgba(0,0,0,.35);
+
+}
+
+.score-circle h2{
+
+    font-size:54px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+.score-circle span{
+
+    color:var(--text2);
+
+    font-size:15px;
+
+}
+
+/* ==========================================================
+   Candidate Information Cards
+   ========================================================== */
+
+.dashboard-cards .kpi-card h3{
+
+    margin-top:8px;
+
+    font-size:20px;
+
+    word-break:break-word;
+
+}
+
+/* ==========================================================
+   AI Summary
+   ========================================================== */
+
+#candidateSummary{
+
+    color:var(--text2);
+
+    line-height:1.9;
+
+    font-size:16px;
+
+}
+
+/* ==========================================================
+   Skill Section
+   ========================================================== */
+
+.skill-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+
+    margin-top:20px;
+
+}
+
+.skill-chip{
+
+    padding:10px 18px;
+
+    border-radius:100px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#fff;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(79,124,255,.25),
+
+        rgba(124,92,255,.25)
+
+    );
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.skill-chip:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(79,124,255,.45);
+
+}
+
+/* ==========================================================
+   Chart Cards
+   ========================================================== */
+
+.chart-card{
+
+    min-height:420px;
+
+}
+
+.chart-card canvas{
+
+    width:100% !important;
+
+    height:320px !important;
+
+}
+
+/* ==========================================================
+   Progress Bars
+   ========================================================== */
+
+.progress-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+.progress-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+.progress-item .label{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    font-size:15px;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:12px;
+
+    border-radius:100px;
+
+    overflow:hidden;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    width:0;
+
+    border-radius:100px;
+
+    transition:width .8s ease;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+}
+
+/* ==========================================================
+   Education Section
+   ========================================================== */
+
+#educationContainer{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.education-card{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+}
+
+.education-card h4{
+
+    margin-bottom:8px;
+
+}
+
+.education-card p{
+
+    color:var(--text2);
+
+    line-height:1.7;
+
+}
+
+/* ==========================================================
+   Resume Highlights
+   ========================================================== */
+
+#resumeHighlights{
+
+    list-style:none;
+
+    margin-top:20px;
+
+}
+
+#resumeHighlights li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:16px;
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+#resumeHighlights li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--success);
+
+    font-weight:700;
+
+}
+/* ==========================================================
+   AI Explainability
+   ========================================================== */
+
+#analysis{
+
+    min-height:420px;
+
+}
+
+.activity-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.activity-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.activity-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.activity-dot{
+
+    width:14px;
+
+    height:14px;
+
+    margin-top:8px;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+    box-shadow:0 0 16px var(--success);
+
+}
+
+.activity-item h4{
+
+    margin-bottom:8px;
+
+    font-size:17px;
+
+}
+
+.activity-item p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   Score Breakdown
+   ========================================================== */
+
+#skillScore,
+#projectScore,
+#experienceScore,
+#educationScore{
+
+    color:#ffffff;
+
+    font-size:34px;
+
+    font-weight:800;
+
+}
+
+.dashboard-cards .kpi-card{
+
+    transition:.35s;
+
+}
+
+.dashboard-cards .kpi-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(79,124,255,.35);
+
+}
+
+/* ==========================================================
+   Strengths & Weaknesses
+   ========================================================== */
+
+#strengthList,
+#weaknessList{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+#strengthList li,
+#weaknessList li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+#strengthList li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--success);
+
+    font-weight:700;
+
+}
+
+#weaknessList li::before{
+
+    content:"!";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--warning);
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   AI Recommendation
+   ========================================================== */
+
+#recommendationText{
+
+    font-size:17px;
+
+    color:var(--text2);
+
+    line-height:1.9;
+
+    padding:10px 0;
+
+}
+
+/* ==========================================================
+   Candidate Timeline
+   ========================================================== */
+
+.activity-item{
+
+    transition:.35s;
+
+}
+
+.activity-item:hover{
+
+    transform:translateX(8px);
+
+}
+
+.activity-item:hover .activity-dot{
+
+    box-shadow:
+
+        0 0 20px var(--success);
+
+}
+
+/* ==========================================================
+   Recruiter Notes
+   ========================================================== */
+
+#recruiterNotes{
+
+    width:100%;
+
+    resize:vertical;
+
+    min-height:180px;
+
+    padding:20px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:18px;
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    line-height:1.7;
+
+    transition:.35s;
+
+}
+
+#recruiterNotes::placeholder{
+
+    color:var(--text2);
+
+}
+
+#recruiterNotes:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:
+
+        0 0 0 4px rgba(79,124,255,.12);
+
+}
+
+/* ==========================================================
+   Recruiter Buttons
+   ========================================================== */
+
+.cta-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:18px;
+
+}
+
+.cta-buttons button{
+
+    min-width:180px;
+
+}
+
+/* ==========================================================
+   Accept Button
+   ========================================================== */
+
+#acceptCandidate{
+
+    background:linear-gradient(
+
+        135deg,
+
+        #00D98B,
+
+        #00B96F
+
+    );
+
+}
+
+#acceptCandidate:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:
+
+        0 15px 35px rgba(0,217,139,.35);
+
+}
+
+/* ==========================================================
+   Hold Button
+   ========================================================== */
+
+#holdCandidate{
+
+    border-color:
+
+        rgba(255,200,87,.30);
+
+}
+
+#holdCandidate:hover{
+
+    background:
+
+        rgba(255,200,87,.15);
+
+}
+
+/* ==========================================================
+   Reject Button
+   ========================================================== */
+
+#rejectCandidate{
+
+    border-color:
+
+        rgba(255,93,115,.30);
+
+}
+
+#rejectCandidate:hover{
+
+    background:
+
+        rgba(255,93,115,.15);
+
+}
+
+/* ==========================================================
+   Download Report Button
+   ========================================================== */
+
+#downloadCandidateReport:hover{
+
+    transform:translateY(-5px);
+
+}
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+
+footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+}
+
+.footer-bottom{
+
+    padding:30px 0;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    color:var(--text2);
+
+}
+/* ==========================================================
+   Responsive Layout
+   ========================================================== */
+
+@media (max-width:1400px){
+
+    .profile-card{
+
+        gap:30px;
+
+    }
+
+    .dashboard-insights{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .charts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   Tablet
+   ========================================================== */
+
+@media (max-width:1024px){
+
+    .profile-card{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .profile-right{
+
+        width:100%;
+
+        justify-content:flex-start;
+
+    }
+
+    .dashboard-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .cta-buttons{
+
+        justify-content:center;
+
+    }
+
+}
+
+/* ==========================================================
+   Mobile
+   ========================================================== */
+
+@media (max-width:768px){
+
+    .profile-card{
+
+        text-align:center;
+
+        align-items:center;
+
+    }
+
+    .profile-left{
+
+        flex-direction:column;
+
+    }
+
+    .profile-tags{
+
+        justify-content:center;
+
+    }
+
+    .dashboard-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .charts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-insights{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .cta-buttons{
+
+        flex-direction:column;
+
+    }
+
+    .cta-buttons button{
+
+        width:100%;
+
+    }
+
+    .score-circle{
+
+        width:160px;
+
+        height:160px;
+
+    }
+
+    .score-circle h2{
+
+        font-size:42px;
+
+    }
+
+}
+
+/* ==========================================================
+   Small Mobile
+   ========================================================== */
+
+@media (max-width:480px){
+
+    .profile-avatar{
+
+        width:90px;
+
+        height:90px;
+
+        font-size:36px;
+
+    }
+
+    .profile-left h2{
+
+        font-size:28px;
+
+    }
+
+    .glass-card{
+
+        padding:20px;
+
+    }
+
+    .dashboard-header{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        align-items:flex-start;
+
+    }
+
+    .header-actions{
+
+        width:100%;
+
+        flex-direction:column;
+
+    }
+
+    .header-actions button{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   Glass Hover
+   ========================================================== */
+
+.glass-card{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease,
+
+        border-color .35s ease;
+
+}
+
+.glass-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(79,124,255,.30);
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+   Skill Chips
+   ========================================================== */
+
+.skill-chip{
+
+    transition:
+
+        transform .3s,
+
+        box-shadow .3s,
+
+        border-color .3s;
+
+}
+
+.skill-chip:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+        0 10px 25px rgba(79,124,255,.25);
+
+}
+
+/* ==========================================================
+   Timeline Hover
+   ========================================================== */
+
+.activity-item{
+
+    transition:
+
+        transform .35s,
+
+        background .35s;
+
+}
+
+.activity-item:hover{
+
+    background:rgba(255,255,255,.03);
+
+    border-radius:16px;
+
+}
+
+/* ==========================================================
+   Loading Skeleton
+   ========================================================== */
+
+.loading-placeholder{
+
+    height:20px;
+
+    border-radius:8px;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.04),
+
+        rgba(255,255,255,.12),
+
+        rgba(255,255,255,.04)
+
+    );
+
+    background-size:500px 100%;
+
+    animation:shimmer 1.6s infinite;
+
+}
+
+/* ==========================================================
+   Empty State
+   ========================================================== */
+
+.empty-state{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.empty-state h3{
+
+    margin-bottom:15px;
+
+}
+
+.empty-state p{
+
+    color:var(--text2);
+
+}
+
+/* ==========================================================
+   Badge Animation
+   ========================================================== */
+
+.badge{
+
+    animation:fadeIn .5s ease;
+
+}
+
+/* ==========================================================
+   Progress Animation
+   ========================================================== */
+
+.progress-fill{
+
+    animation:progress 1.2s ease;
+
+}
+
+/* ==========================================================
+   Scrollbar
+   ========================================================== */
+
+::-webkit-scrollbar{
+
+    width:8px;
+
+    height:8px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:rgba(79,124,255,.4);
+
+    border-radius:100px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:transparent;
+
+}
+/* ==========================================================
+   BharatHire
+   candidate.css
+   Part 4
+   Final Polish
+   ========================================================== */
+
+/* ==========================================================
+   Button Focus States
+   ========================================================== */
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible{
+
+    outline:2px solid var(--accent);
+
+    outline-offset:3px;
+
+}
+
+/* ==========================================================
+   Selection
+   ========================================================== */
+
+::selection{
+
+    background:rgba(79,124,255,.35);
+
+    color:#ffffff;
+
+}
+
+/* ==========================================================
+   Utility Classes
+   ========================================================== */
+
+.text-success{
+
+    color:var(--success);
+
+}
+
+.text-warning{
+
+    color:var(--warning);
+
+}
+
+.text-danger{
+
+    color:var(--danger);
+
+}
+
+.text-muted{
+
+    color:var(--text2);
+
+}
+
+.text-center{
+
+    text-align:center;
+
+}
+
+.mt-20{
+
+    margin-top:20px;
+
+}
+
+.mt-30{
+
+    margin-top:30px;
+
+}
+
+.mb-20{
+
+    margin-bottom:20px;
+
+}
+
+.mb-30{
+
+    margin-bottom:30px;
+
+}
+
+.hidden{
+
+    display:none !important;
+
+}
+
+.flex{
+
+    display:flex;
+
+}
+
+.flex-center{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.w-100{
+
+    width:100%;
+
+}
+
+/* ==========================================================
+   Fade Utilities
+   ========================================================== */
+
+.fade-in{
+
+    animation:fadeIn .6s ease;
+
+}
+
+.fade-up{
+
+    animation:fadeUp .8s ease;
+
+}
+
+.scale-in{
+
+    animation:scaleIn .45s ease;
+
+}
+
+/* ==========================================================
+   Status Indicators
+   ========================================================== */
+
+.status-online{
+
+    color:var(--success);
+
+}
+
+.status-warning{
+
+    color:var(--warning);
+
+}
+
+.status-offline{
+
+    color:var(--danger);
+
+}
+
+/* ==========================================================
+   Card Variants
+   ========================================================== */
+
+.card-success{
+
+    border-left:4px solid var(--success);
+
+}
+
+.card-warning{
+
+    border-left:4px solid var(--warning);
+
+}
+
+.card-danger{
+
+    border-left:4px solid var(--danger);
+
+}
+
+/* ==========================================================
+   Icon Containers
+   ========================================================== */
+
+.icon-box{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(79,124,255,.15);
+
+    font-size:24px;
+
+}
+
+/* ==========================================================
+   Divider
+   ========================================================== */
+
+.section-divider{
+
+    width:100%;
+
+    height:1px;
+
+    margin:40px 0;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+/* ==========================================================
+   Loading Overlay
+   ========================================================== */
+
+.loading-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(5,10,20,.65);
+
+    backdrop-filter:blur(6px);
+
+    z-index:9999;
+
+}
+
+.loading-spinner{
+
+    width:56px;
+
+    height:56px;
+
+    border-radius:50%;
+
+    border:4px solid rgba(255,255,255,.15);
+
+    border-top-color:var(--primary);
+
+    animation:rotate 1s linear infinite;
+
+}
+
+/* ==========================================================
+   Print Support
+   ========================================================== */
+
+@media print{
+
+    .sidebar,
+
+    .header-actions,
+
+    .cta-buttons,
+
+    .toast-container,
+
+    canvas,
+
+    button{
+
+        display:none !important;
+
+    }
+
+    .dashboard-layout{
+
+        display:block;
+
+    }
+
+    .dashboard-main{
+
+        padding:0;
+
+    }
+
+    .glass-card{
+
+        border:1px solid #d0d0d0;
+
+        box-shadow:none;
+
+        background:#ffffff;
+
+        color:#000000;
+
+    }
+
+}
+
+/* ==========================================================
+   Reduced Motion
+   ========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/* ==========================================================
+   Dark Theme Tweaks
+   ========================================================== */
+
+body{
+
+    text-rendering:optimizeLegibility;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+}
+
+/* ==========================================================
+   End of File
+   ========================================================== */

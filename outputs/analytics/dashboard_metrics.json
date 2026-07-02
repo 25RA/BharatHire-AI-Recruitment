@@ -1,0 +1,92 @@
+{
+    "candidates_processed": 100000,
+    "average_score": 40.7,
+    "highest_score": 96.48,
+    "lowest_score": 20.0,
+    "recommendations": {
+        "Not Recommended": 90969,
+        "Needs Manual Review": 8248,
+        "Shortlist": 760,
+        "Strong Shortlist": 22,
+        "Elite Match": 1
+    },
+    "component_scores": {
+        "skill_score": 14.92,
+        "experience_score": 82.11,
+        "career_score": 93.06,
+        "behavior_score": 35.28,
+        "industry_score": 53.63,
+        "assessment_score": 1.14
+    },
+    "confidence": {
+        "average": 46.69,
+        "maximum": 87.22
+    },
+    "top_candidates": [
+        {
+            "candidate_id": "CAND_0046525",
+            "overall_score": 96.48,
+            "recommendation": "Elite Match"
+        },
+        {
+            "candidate_id": "CAND_0018653",
+            "overall_score": 91.94,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0006821",
+            "overall_score": 91.16,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0039754",
+            "overall_score": 90.49,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0002120",
+            "overall_score": 90.36,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0046064",
+            "overall_score": 90.26,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0090584",
+            "overall_score": 90.12,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0067201",
+            "overall_score": 89.72,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0043318",
+            "overall_score": 89.6,
+            "recommendation": "Strong Shortlist"
+        },
+        {
+            "candidate_id": "CAND_0054276",
+            "overall_score": 88.53,
+            "recommendation": "Strong Shortlist"
+        }
+    ],
+    "top_strengths": {
+        "Stable career progression": 74009,
+        "Experience perfectly matches the JD": 51279,
+        "Relevant experience": 20752,
+        "Positive recruiter engagement": 9203,
+        "Excellent recruiter engagement": 6411,
+        "Good technical skill match": 3524,
+        "Excellent technical skill match": 2610
+    },
+    "top_concerns": {
+        "Missing important required skills": 93866,
+        "Behavioral profile could be stronger": 84386,
+        "Experience below preferred range": 27969,
+        "Career progression needs review": 25991
+    }
+}

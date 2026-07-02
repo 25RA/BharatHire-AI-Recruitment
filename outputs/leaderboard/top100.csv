@@ -1,0 +1,101 @@
+candidate_id,overall_score,skill_score,experience_score,career_score,behavior_score,industry_score,assessment_score,risk_penalty,recommendation,strengths,concerns
+CAND_0046525,82.65,73.33,100.0,100,100.0,60,96.5,0,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0039754,79.25,80.0,64.0,100,100.0,60,96.5,0,Shortlist,Strong technical skill match; Stable career progression; Positive recruiter engagement,
+CAND_0046064,79.12,73.33,100.0,100,98.1,60,64.1,0,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0090584,78.95,73.33,100.0,100,100.0,60,67.0,15,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0009516,78.09,76.67,100.0,100,99.46,60,41.7,0,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0040887,77.18,66.67,94.0,100,100.0,60,70.8,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0018653,77.04,83.33,100.0,100,54.3,60,79.0,0,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression,Behavioral profile could be stronger
+CAND_0002120,77.0,63.33,100.0,100,100.0,60,75.0,10,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0007567,76.97,60.0,100.0,100,100.0,60,79.7,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0043318,76.67,73.33,100.0,100,100.0,60,49.2,25,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0054123,76.37,63.33,94.0,100,100.0,60,77.75,10,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0081480,76.22,60.0,100.0,100,97.04,60,76.6,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0014909,76.12,60.0,96.0,100,100.0,60,84.7,15,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0053591,76.01,53.33,100.0,100,100.0,60,90.1,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0046313,75.97,60.0,100.0,100,91.84,60,81.93,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0094728,75.86,60.0,100.0,100,89.14,60,84.9,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0082086,75.55,66.67,100.0,100,100.0,60,45.5,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0006821,75.49,86.67,100.0,100,37.98,60,77.9,0,Shortlist,Strong technical skill match; Experience aligns with job requirements; Stable career progression,Behavioral profile could be stronger
+CAND_0009837,75.31,63.33,86.0,95,97.32,60,90.6,10,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0060835,75.05,60.0,100.0,100,100.0,60,60.5,0,Shortlist,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0059017,74.91,56.67,100.0,100,100.0,60,69.1,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0095858,74.39,60.0,86.0,100,100.0,60,74.9,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0003791,74.35,50.0,100.0,100,100.0,60,83.5,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0005260,74.2,70.0,100.0,100,60.74,60,80.9,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression,Behavioral profile could be stronger
+CAND_0030784,74.12,63.33,88.0,100,100.0,60,59.2,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0060257,74.12,63.33,100.0,100,100.0,60,46.2,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0018499,74.0,76.67,100.0,100,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0086292,73.57,56.67,100.0,100,94.92,60,63.3,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0089498,73.53,60.0,100.0,100,94.43,60,53.7,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0096801,73.49,63.33,84.0,100,93.97,60,68.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0021491,73.09,46.67,100.0,100,100.0,60,80.9,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0041625,73.03,73.33,94.0,80,91.47,60,52.1,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0049831,73.02,60.0,100.0,80,100.0,60,70.2,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0086022,73.0,73.33,100.0,100,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0094759,72.86,50.0,100.0,100,98.48,60,80.9,20,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0028527,72.83,60.0,100.0,100,88.17,60,56.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0067201,72.58,73.33,100.0,100,41.04,60,84.2,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression,Behavioral profile could be stronger
+CAND_0054276,72.53,70.0,100.0,100,52.84,60,81.0,10,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression,Behavioral profile could be stronger
+CAND_0089495,72.42,60.0,86.0,100,84.37,60,78.6,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0041669,72.37,43.33,100.0,100,100.0,60,83.7,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0066999,72.28,46.67,100.0,100,100.0,60,72.77,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0015543,72.28,86.67,62.0,80,76.32,60,75.3,0,Needs Manual Review,Strong technical skill match; Stable career progression; Positive recruiter engagement,
+CAND_0032955,72.26,63.33,100.0,80,97.37,60,61.6,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0050504,72.25,46.67,100.0,100,100.0,60,72.5,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0065805,72.07,56.67,100.0,100,83.01,60,78.7,25,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0065277,72.01,63.33,100.0,100,79.46,60,50.97,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0086036,72.0,70.0,100.0,100,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0044890,71.9,56.67,100.0,100,96.16,60,44.7,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0014858,71.7,70.0,98.0,100,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0093401,71.65,60.0,100.0,90,88.2,60,66.7,15,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0040274,71.62,43.33,100.0,100,100.0,60,81.2,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0063328,71.57,60.0,92.0,100,100.0,60,42.7,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0080315,71.51,73.33,82.0,100,62.82,60,67.83,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression,Behavioral profile could be stronger
+CAND_0052994,71.47,70.0,100.0,100,96.5,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0052431,71.3,50.0,100.0,100,100.0,60,58.0,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0067609,71.26,50.0,90.0,100,91.43,60,80.5,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0070398,71.23,43.33,100.0,100,100.0,60,84.8,25,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0046625,71.23,53.33,100.0,100,91.33,60,55.3,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0053605,71.14,60.0,100.0,100,80.34,60,50.9,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0040426,71.14,46.67,100.0,100,90.98,60,74.9,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0092070,71.1,70.0,100.0,100,94.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0055905,71.03,80.0,100.0,100,76.9,60,0.0,10,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0069905,71.0,66.67,100.0,100,100.0,60,0.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0027120,70.98,53.33,100.0,100,99.61,60,52.9,25,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0023458,70.93,56.67,100.0,100,81.47,60,57.07,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0078020,70.89,43.33,100.0,100,100.0,60,68.9,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0043312,70.85,76.67,84.0,95,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0054795,70.7,76.67,98.0,80,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0066884,70.64,50.0,100.0,100,78.6,60,83.5,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0099021,70.61,43.33,100.0,100,96.79,60,75.9,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0082489,70.59,73.33,100.0,100,83.97,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0029135,70.5,63.33,100.0,80,67.98,60,83.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression,Missing important required skills; Behavioral profile could be stronger
+CAND_0091909,70.49,36.67,100.0,100,100.0,60,84.9,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0074208,70.47,70.0,91.5,100,98.27,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0014683,70.41,60.0,100.0,100,71.54,60,64.3,15,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0069638,70.37,50.0,100.0,100,79.04,60,75.1,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0081686,70.29,60.0,100.0,90,64.66,60,85.9,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression,Missing important required skills; Behavioral profile could be stronger
+CAND_0074098,70.28,56.67,98.0,100,79.34,60,56.8,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0073620,70.24,60.0,88.0,100,75.27,60,67.5,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0074342,70.24,70.0,100.0,100,91.59,60,0.0,10,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0048661,70.15,56.67,78.0,95,94.87,60,74.7,10,Needs Manual Review,Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0039269,70.13,76.67,66.0,80,100.0,60,42.3,0,Needs Manual Review,Strong technical skill match; Stable career progression; Positive recruiter engagement,
+CAND_0088240,70.12,70.0,100.0,100,87.45,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0076163,70.07,46.67,100.0,100,100.0,60,50.7,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0012957,70.06,46.67,98.0,100,92.6,60,72.15,15,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0002793,70.02,70.0,100.0,100,90.1,60,0.0,10,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0007009,70.0,63.33,100.0,100,100.0,60,0.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0008486,70.0,50.0,100.0,100,99.55,60,45.7,10,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0073007,70.0,63.33,100.0,100,100.0,60,0.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0010408,70.0,63.33,100.0,100,100.0,60,0.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0076482,70.0,63.33,100.0,100,100.0,60,0.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0054616,69.97,56.67,100.0,100,89.2,60,43.4,15,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0016317,69.86,70.0,100.0,100,89.1,60,0.0,10,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0020708,69.85,73.33,84.0,95,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0099204,69.85,53.33,100.0,100,67.54,60,77.2,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression,Missing important required skills; Behavioral profile could be stronger
+CAND_0016678,69.84,46.67,100.0,80,97.78,60,81.7,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0014692,69.82,40.0,98.0,100,98.11,60,74.0,0,Needs Manual Review,Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,Missing important required skills
+CAND_0055187,69.8,70.0,94.0,100,91.33,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0009234,69.75,70.0,95.0,90,100.0,60,0.0,0,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,
+CAND_0039982,69.73,70.0,89.5,100,98.69,60,0.0,10,Needs Manual Review,Strong technical skill match; Experience aligns with job requirements; Stable career progression; Positive recruiter engagement,

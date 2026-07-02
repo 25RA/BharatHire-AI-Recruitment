@@ -1,0 +1,669 @@
+/* ==========================================================
+   BharatHire
+   animations.css
+   ========================================================== */
+
+/* ==========================================================
+   Base Animation Variables
+   ========================================================== */
+
+:root{
+    --ease:cubic-bezier(.22,.61,.36,1);
+    --fast:.25s;
+    --normal:.45s;
+    --slow:.8s;
+}
+
+/* ==========================================================
+   Fade Animations
+   ========================================================== */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeDown{
+
+    from{
+
+        opacity:0;
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+@keyframes fadeLeft{
+
+    from{
+
+        opacity:0;
+        transform:translateX(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+@keyframes fadeRight{
+
+    from{
+
+        opacity:0;
+        transform:translateX(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+/* ==========================================================
+   Scale
+   ========================================================== */
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+        transform:scale(.85);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+}
+
+@keyframes pop{
+
+    0%{
+
+        transform:scale(.7);
+
+    }
+
+    60%{
+
+        transform:scale(1.08);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+/* ==========================================================
+   Floating Animation
+   ========================================================== */
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.float{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+/* ==========================================================
+   Aurora Movement
+   ========================================================== */
+
+@keyframes auroraMove{
+
+    0%{
+
+        transform:
+        translate(0,0)
+        scale(1);
+
+    }
+
+    50%{
+
+        transform:
+        translate(60px,-40px)
+        scale(1.15);
+
+    }
+
+    100%{
+
+        transform:
+        translate(-40px,40px)
+        scale(1);
+
+    }
+
+}
+
+.aurora span{
+
+    animation:auroraMove 18s infinite alternate ease-in-out;
+
+}
+
+/* ==========================================================
+   Pulse
+   ========================================================== */
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+    50%{
+
+        transform:scale(1.08);
+        opacity:.75;
+
+    }
+
+    100%{
+
+        transform:scale(1);
+        opacity:1;
+
+    }
+
+}
+
+.pulse{
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ==========================================================
+   Glow
+   ========================================================== */
+
+@keyframes glow{
+
+    0%{
+
+        box-shadow:
+        0 0 0 rgba(79,124,255,0);
+
+    }
+
+    50%{
+
+        box-shadow:
+        0 0 30px rgba(79,124,255,.45);
+
+    }
+
+    100%{
+
+        box-shadow:
+        0 0 0 rgba(79,124,255,0);
+
+    }
+
+}
+
+.glow{
+
+    animation:glow 2.5s infinite;
+
+}
+
+/* ==========================================================
+   Gradient Shift
+   ========================================================== */
+
+@keyframes gradientShift{
+
+    0%{
+
+        background-position:0% 50%;
+
+    }
+
+    50%{
+
+        background-position:100% 50%;
+
+    }
+
+    100%{
+
+        background-position:0% 50%;
+
+    }
+
+}
+
+.gradient-animated{
+
+    background-size:300% 300%;
+
+    animation:
+    gradientShift 8s ease infinite;
+
+}
+
+/* ==========================================================
+   Loader
+   ========================================================== */
+
+@keyframes rotate{
+
+    from{
+
+        transform:rotate(0);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+.loader-ring{
+
+    animation:
+    rotate 1s linear infinite;
+
+}
+
+/* ==========================================================
+   Shimmer Skeleton
+   ========================================================== */
+
+@keyframes shimmer{
+
+    0%{
+
+        background-position:-400px 0;
+
+    }
+
+    100%{
+
+        background-position:400px 0;
+
+    }
+
+}
+
+.skeleton{
+
+    background:
+
+    linear-gradient(
+
+    90deg,
+
+    rgba(255,255,255,.04),
+
+    rgba(255,255,255,.12),
+
+    rgba(255,255,255,.04)
+
+    );
+
+    background-size:800px 100%;
+
+    animation:
+    shimmer 1.5s infinite;
+
+}
+
+/* ==========================================================
+   Progress Bar
+   ========================================================== */
+
+@keyframes progress{
+
+    from{
+
+        width:0;
+
+    }
+
+}
+
+.progress-fill{
+
+    animation:
+    progress 1.2s ease;
+
+}
+
+/* ==========================================================
+   Notification
+   ========================================================== */
+
+@keyframes slideToast{
+
+    from{
+
+        opacity:0;
+        transform:translateX(120%);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateX(0);
+
+    }
+
+}
+
+.toast{
+
+    animation:
+    slideToast .45s var(--ease);
+
+}
+
+/* ==========================================================
+   Scroll Reveal
+   ========================================================== */
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:
+
+    opacity .7s var(--ease),
+
+    transform .7s var(--ease);
+
+}
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================================
+   Card Hover
+   ========================================================== */
+
+.hover-card{
+
+    transition:
+
+    transform .35s,
+
+    box-shadow .35s;
+
+}
+
+.hover-card:hover{
+
+    transform:
+
+    translateY(-8px);
+
+    box-shadow:
+
+    0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+   Ripple Button
+   ========================================================== */
+
+.primary-btn,
+.glass-btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.primary-btn::after,
+.glass-btn::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:0;
+
+    height:0;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    transform:translate(-50%,-50%);
+
+    transition:.6s;
+
+}
+
+.primary-btn:active::after,
+.glass-btn:active::after{
+
+    width:280px;
+
+    height:280px;
+
+}
+
+/* ==========================================================
+   AI Status Indicator
+   ========================================================== */
+
+.status-indicator.online{
+
+    animation:
+
+    pulse 2s infinite;
+
+}
+
+/* ==========================================================
+   Counter Animation
+   ========================================================== */
+
+.counter{
+
+    animation:
+
+    pop .8s ease;
+
+}
+
+/* ==========================================================
+   Modal Animation
+   ========================================================== */
+
+.modal-content{
+
+    animation:
+
+    scaleIn .35s var(--ease);
+
+}
+
+/* ==========================================================
+   Hero Entrance
+   ========================================================== */
+
+.hero-left{
+
+    animation:
+
+    fadeLeft .9s var(--ease);
+
+}
+
+.hero-right{
+
+    animation:
+
+    fadeRight .9s var(--ease);
+
+}
+
+/* ==========================================================
+   Navbar
+   ========================================================== */
+
+.navbar{
+
+    animation:
+
+    fadeDown .8s var(--ease);
+
+}
+
+/* ==========================================================
+   Footer
+   ========================================================== */
+
+footer{
+
+    animation:
+
+    fadeUp .8s var(--ease);
+
+}
+
+/* ==========================================================
+   Generic Animation Classes
+   ========================================================== */
+
+.animate-fade{
+
+    animation:
+
+    fadeIn .8s both;
+
+}
+
+.animate-up{
+
+    animation:
+
+    fadeUp .8s both;
+
+}
+
+.animate-down{
+
+    animation:
+
+    fadeDown .8s both;
+
+}
+
+.animate-left{
+
+    animation:
+
+    fadeLeft .8s both;
+
+}
+
+.animate-right{
+
+    animation:
+
+    fadeRight .8s both;
+
+}
+
+.animate-scale{
+
+    animation:
+
+    scaleIn .8s both;
+
+}

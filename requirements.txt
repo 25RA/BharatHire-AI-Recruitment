@@ -1,0 +1,49 @@
+# ==========================
+# BharatHire AI Platform
+# ==========================
+
+# Backend
+fastapi
+uvicorn
+python-multipart
+jinja2
+
+# Data Processing
+pandas
+numpy
+pyarrow
+orjson
+
+# Machine Learning
+scikit-learn
+lightgbm
+xgboost
+
+# Embeddings
+#sentence-transformers
+#faiss-cpu
+
+# NLP
+#spacy
+nltk
+
+# Utilities
+tqdm
+python-dotenv
+loguru
+joblib
+pyyaml
+
+# Visualization
+plotly
+matplotlib
+
+# Validation
+pydantic
+
+# Development
+black
+isort
+pytest
+
+python-docx

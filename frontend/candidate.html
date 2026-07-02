@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Candidate Intelligence • BharatHire
+
+</title>
+
+<link
+rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link
+rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link
+href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<link
+rel="stylesheet"
+href="css/style.css">
+
+<link
+rel="stylesheet"
+href="css/animations.css">
+
+<link
+rel="stylesheet"
+href="css/responsive.css">
+
+<link
+rel="stylesheet"
+href="css/candidate.css">
+
+<script
+src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<!-- ====================================================== -->
+<!-- Background -->
+<!-- ====================================================== -->
+
+<div class="background-blobs">
+
+<div class="blob blob-1"></div>
+
+<div class="blob blob-2"></div>
+
+<div class="blob blob-3"></div>
+
+</div>
+
+<div id="particles-js"></div>
+
+<!-- ====================================================== -->
+<!-- Layout -->
+<!-- ====================================================== -->
+
+<div class="dashboard-layout">
+
+<!-- ====================================================== -->
+<!-- Sidebar -->
+<!-- ====================================================== -->
+
+<aside class="sidebar">
+
+<div class="logo">
+
+<h2>
+
+BharatHire
+
+</h2>
+
+<span>
+
+AI Recruitment
+
+</span>
+
+</div>
+
+<nav>
+
+<a href="index.html">
+
+🏠 Home
+
+</a>
+
+<a href="dashboard.html">
+
+📊 Dashboard
+
+</a>
+
+<a
+href="#"
+class="active">
+
+🧠 Candidate Intelligence
+
+</a>
+
+</nav>
+
+<div class="sidebar-footer">
+
+<div>
+
+Backend
+
+</div>
+
+<strong id="candidateBackend">
+
+Checking...
+
+</strong>
+
+</div>
+
+</aside>
+
+<!-- ====================================================== -->
+<!-- Main -->
+<!-- ====================================================== -->
+
+<main class="dashboard-main">
+
+<!-- ====================================================== -->
+<!-- Header -->
+<!-- ====================================================== -->
+
+<header class="dashboard-header">
+
+<div>
+
+<h1>
+
+Candidate Intelligence Report
+
+</h1>
+
+<p>
+
+AI-powered explainability and hiring recommendation
+
+</p>
+
+</div>
+
+<div class="header-actions">
+
+<button
+class="glass-btn"
+id="backDashboard">
+
+← Dashboard
+
+</button>
+
+<button
+class="primary-btn"
+id="refreshCandidate">
+
+Refresh
+
+</button>
+
+</div>
+
+</header>
+
+<!-- ====================================================== -->
+<!-- Candidate Summary -->
+<!-- ====================================================== -->
+
+<section class="glass-card profile-card">
+
+<div class="profile-left">
+
+<div class="profile-avatar">
+
+AI
+
+</div>
+
+<div>
+
+<h2 id="candidateId">
+
+Loading...
+
+</h2>
+
+<p>
+
+Candidate Identifier
+
+</p>
+
+<div class="profile-tags">
+
+<span
+class="tag"
+id="recommendationBadge">
+
+Loading...
+
+</span>
+
+<span
+class="tag secondary">
+
+AI Evaluated
+
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="profile-right">
+
+<div class="score-circle">
+
+<h2 id="overallScore">
+
+--
+
+</h2>
+
+<span>
+
+Overall Score
+
+</span>
+
+</div>
+
+</div>
+
+</section>
+<!-- ====================================================== -->
+<!-- AI Evaluation Metrics -->
+<!-- ====================================================== -->
+
+<section class="dashboard-cards">
+
+<div class="glass-card stat-card">
+
+<div class="stat-icon">
+
+💻
+
+</div>
+
+<div>
+
+<h3 id="technicalFit">
+
+--
+
+</h3>
+
+<p>
+
+Technical Fit
+
+</p>
+
+</div>
+
+</div>
+
+<div class="glass-card stat-card">
+
+<div class="stat-icon">
+
+📈
+
+</div>
+
+<div>
+
+<h3 id="experienceFit">
+
+--
+
+</h3>
+
+<p>
+
+Experience Fit
+
+</p>
+
+</div>
+
+</div>
+
+<div class="glass-card stat-card">
+
+<div class="stat-icon">
+
+🧠
+
+</div>
+
+<div>
+
+<h3 id="behaviorFit">
+
+--
+
+</h3>
+
+<p>
+
+Behavior Fit
+
+</p>
+
+</div>
+
+</div>
+
+<div class="glass-card stat-card">
+
+<div class="stat-icon">
+
+🎯
+
+</div>
+
+<div>
+
+<h3 id="confidenceScore">
+
+--
+
+</h3>
+
+<p>
+
+Confidence
+
+</p>
+
+</div>
+
+</div>
+
+<div class="glass-card stat-card">
+
+<div class="stat-icon">
+
+⚠️
+
+</div>
+
+<div>
+
+<h3 id="riskScore">
+
+--
+
+</h3>
+
+<p>
+
+Risk Score
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- Component Scores -->
+<!-- ====================================================== -->
+
+<section class="glass-card">
+
+<div class="section-header">
+
+<h2>
+
+AI Component Scores
+
+</h2>
+
+<p>
+
+Breakdown of the AI evaluation across multiple hiring dimensions.
+
+</p>
+
+</div>
+
+<div class="dashboard-cards">
+
+<div class="mini-score-card">
+
+<h4>
+
+Skill Score
+
+</h4>
+
+<h2 id="skillScore">
+
+--
+
+</h2>
+
+</div>
+
+<div class="mini-score-card">
+
+<h4>
+
+Experience Score
+
+</h4>
+
+<h2 id="experienceScore">
+
+--
+
+</h2>
+
+</div>
+
+<div class="mini-score-card">
+
+<h4>
+
+Career Score
+
+</h4>
+
+<h2 id="careerScore">
+
+--
+
+</h2>
+
+</div>
+
+<div class="mini-score-card">
+
+<h4>
+
+Industry Score
+
+</h4>
+
+<h2 id="industryScore">
+
+--
+
+</h2>
+
+</div>
+
+<div class="mini-score-card">
+
+<h4>
+
+Assessment Score
+
+</h4>
+
+<h2 id="assessmentScore">
+
+--
+
+</h2>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- Fit Analysis -->
+<!-- ====================================================== -->
+
+<section class="dashboard-insights">
+
+<div class="glass-card">
+
+<div class="section-header">
+
+<h2>
+
+Candidate Fit Analysis
+
+</h2>
+
+</div>
+
+<canvas
+
+id="fitChart"
+
+height="260">
+
+</canvas>
+
+</div>
+
+<div class="glass-card">
+
+<div class="section-header">
+
+<h2>
+
+Risk Distribution
+
+</h2>
+
+</div>
+
+<canvas
+
+id="riskChart"
+
+height="260">
+
+</canvas>
+
+</div>
+
+</section>
+<!-- ====================================================== -->
+<!-- AI Explainability -->
+<!-- ====================================================== -->
+
+<section class="dashboard-insights">
+
+    <!-- Strengths -->
+
+    <div class="glass-card">
+
+        <div class="section-header">
+
+            <h2>
+
+                AI Identified Strengths
+
+            </h2>
+
+            <p>
+
+                Positive attributes detected by the BharatHire AI engine.
+
+            </p>
+
+        </div>
+
+        <div
+            id="strengthsContainer"
+            class="analysis-list">
+
+            <div class="loading-placeholder"></div>
+            <div class="loading-placeholder"></div>
+            <div class="loading-placeholder"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Concerns -->
+
+    <div class="glass-card">
+
+        <div class="section-header">
+
+            <h2>
+
+                AI Identified Concerns
+
+            </h2>
+
+            <p>
+
+                Areas that may require recruiter review.
+
+            </p>
+
+        </div>
+
+        <div
+            id="concernsContainer"
+            class="analysis-list">
+
+            <div class="loading-placeholder"></div>
+            <div class="loading-placeholder"></div>
+            <div class="loading-placeholder"></div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- Final Recommendation -->
+<!-- ====================================================== -->
+
+<section class="glass-card">
+
+    <div class="section-header">
+
+        <h2>
+
+            Final AI Recommendation
+
+        </h2>
+
+        <p>
+
+            Overall hiring decision generated by BharatHire.
+
+        </p>
+
+    </div>
+
+    <div class="recommendation-panel">
+
+        <div
+            class="recommendation-badge"
+            id="recommendationLabel">
+
+            Loading...
+
+        </div>
+
+        <p
+            id="recommendationDescription">
+
+            AI recommendation will appear here after evaluation.
+
+        </p>
+
+    </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- Quick Summary -->
+<!-- ====================================================== -->
+
+<section class="dashboard-cards">
+
+    <div class="glass-card summary-card">
+
+        <h4>
+
+            Candidate ID
+
+        </h4>
+
+        <h2 id="summaryCandidateId">
+
+            --
+
+        </h2>
+
+    </div>
+
+    <div class="glass-card summary-card">
+
+        <h4>
+
+            Overall Score
+
+        </h4>
+
+        <h2 id="summaryOverallScore">
+
+            --
+
+        </h2>
+
+    </div>
+
+    <div class="glass-card summary-card">
+
+        <h4>
+
+            Confidence
+
+        </h4>
+
+        <h2 id="summaryConfidence">
+
+            --
+
+        </h2>
+
+    </div>
+
+    <div class="glass-card summary-card">
+
+        <h4>
+
+            Recommendation
+
+        </h4>
+
+        <h2 id="summaryRecommendation">
+
+            --
+
+        </h2>
+
+    </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- Navigation -->
+<!-- ====================================================== -->
+
+<section class="glass-card">
+
+    <div class="cta-buttons">
+
+        <button
+            class="glass-btn"
+            onclick="window.location.href='dashboard.html'">
+
+            ← Back to Dashboard
+
+        </button>
+
+        <button
+            class="primary-btn"
+            id="refreshCandidateBottom">
+
+            Refresh Analysis
+
+        </button>
+
+    </div>
+
+</section>
+
+<!-- ====================================================== -->
+<!-- Footer -->
+<!-- ====================================================== -->
+
+<footer class="dashboard-footer">
+
+    <p>
+
+        BharatHire • AI Candidate Intelligence Platform
+
+    </p>
+
+</footer>
+
+</main>
+
+</div>
+<!-- ====================================================== -->
+<!-- Loading Overlay -->
+<!-- ====================================================== -->
+
+<div
+class="loading-overlay hidden"
+id="candidateLoading">
+
+<div class="loading-spinner"></div>
+
+</div>
+
+<!-- ====================================================== -->
+<!-- Toast Container -->
+<!-- ====================================================== -->
+
+<div
+id="toastContainer"
+class="toast-container">
+
+</div>
+
+<!-- ====================================================== -->
+<!-- Scripts -->
+<!-- ====================================================== -->
+
+<script src="js/particles.js"></script>
+
+<script src="js/api.js"></script>
+
+<script src="js/charts.js"></script>
+
+<script src="js/candidate.js"></script>
+
+<script>
+
+document.addEventListener(
+
+    "DOMContentLoaded",
+
+    () => {
+
+        if(
+
+            typeof initParticles ===
+
+            "function"
+
+        ){
+
+            initParticles();
+
+        }
+
+    }
+
+);
+
+</script>
+
+</body>
+
+</html>

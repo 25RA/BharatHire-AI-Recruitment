@@ -1,0 +1,1984 @@
+/* ==========================================================
+   BharatHire
+   dashboard.css
+   Part 1
+   ========================================================== */
+
+/* ==========================================================
+   Dashboard Layout
+   ========================================================== */
+
+.dashboard-layout{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    min-height:100vh;
+
+    background:transparent;
+
+}
+
+/* ==========================================================
+   Sidebar
+   ========================================================== */
+
+.sidebar{
+
+    position:sticky;
+
+    top:0;
+
+    height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    padding:30px 24px;
+
+    background:rgba(12,18,35,.78);
+
+    backdrop-filter:blur(24px);
+
+    border-right:1px solid rgba(255,255,255,.08);
+
+}
+
+.sidebar-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    margin-bottom:45px;
+
+}
+
+.sidebar-logo h2{
+
+    font-size:24px;
+
+    font-weight:800;
+
+}
+
+.sidebar-logo p{
+
+    color:var(--text2);
+
+    font-size:13px;
+
+    margin-top:4px;
+
+}
+
+/* ==========================================================
+   Sidebar Navigation
+   ========================================================== */
+
+.sidebar-nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.sidebar-nav a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    padding:15px 18px;
+
+    border-radius:16px;
+
+    color:var(--text2);
+
+    transition:.35s;
+
+    font-weight:500;
+
+}
+
+.sidebar-nav a span{
+
+    font-size:20px;
+
+}
+
+.sidebar-nav a:hover{
+
+    color:#fff;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+.sidebar-nav a.active{
+
+    color:#fff;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    box-shadow:0 12px 35px rgba(79,124,255,.28);
+
+}
+
+.sidebar-footer{
+
+    margin-top:40px;
+
+}
+
+/* ==========================================================
+   Dashboard Main
+   ========================================================== */
+
+.dashboard-main{
+
+    padding:35px;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================================
+   Dashboard Header
+   ========================================================== */
+
+.dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    gap:25px;
+
+}
+
+.dashboard-header h1{
+
+    font-size:38px;
+
+    font-weight:800;
+
+}
+
+.dashboard-header p{
+
+    color:var(--text2);
+
+    margin-top:8px;
+
+}
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+/* ==========================================================
+   Search Box
+   ========================================================== */
+
+.search-box{
+
+    position:relative;
+
+}
+
+.search-box input{
+
+    width:300px;
+
+    padding:15px 20px;
+
+    border:none;
+
+    outline:none;
+
+    color:#fff;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.search-box input::placeholder{
+
+    color:var(--text2);
+
+}
+
+.search-box input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(79,124,255,.15);
+
+}
+
+/* ==========================================================
+   Welcome Banner
+   ========================================================== */
+
+.dashboard-banner{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:35px;
+
+    padding:35px;
+
+    border-radius:28px;
+
+}
+
+.dashboard-banner h2{
+
+    font-size:34px;
+
+    margin-bottom:12px;
+
+}
+
+.dashboard-banner p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   KPI Cards
+   ========================================================== */
+
+.dashboard-cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.kpi-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:28px;
+
+    border-radius:24px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(18px);
+
+    transition:.35s;
+
+}
+
+.kpi-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(79,124,255,.35);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.35);
+
+}
+
+.kpi-card h4{
+
+    color:var(--text2);
+
+    font-size:15px;
+
+    margin-bottom:10px;
+
+}
+
+.kpi-card h2{
+
+    font-size:34px;
+
+    font-weight:800;
+
+}
+
+.kpi-icon{
+
+    width:72px;
+
+    height:72px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:20px;
+
+    font-size:30px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(79,124,255,.22),
+
+        rgba(124,92,255,.22)
+
+    );
+
+}
+
+/* ==========================================================
+   Shared Glass Card
+   ========================================================== */
+
+.glass-card{
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:28px;
+
+    backdrop-filter:blur(20px);
+
+    box-shadow:0 15px 40px rgba(0,0,0,.25);
+
+}
+
+/* ==========================================================
+   Card Header
+   ========================================================== */
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:25px;
+
+}
+
+.card-header h3{
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   Chart Grid
+   ========================================================== */
+
+.charts-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.chart-card{
+
+    min-height:420px;
+
+}
+
+.chart-card canvas{
+
+    width:100% !important;
+
+    height:320px !important;
+
+}
+/* ==========================================================
+   Leaderboard
+   ========================================================== */
+
+.leaderboard{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.leaderboard-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 22px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.35s;
+
+}
+
+.leaderboard-item:hover{
+
+    transform:translateX(8px);
+
+    border-color:rgba(79,124,255,.35);
+
+    background:rgba(255,255,255,.07);
+
+}
+
+.candidate-info{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+}
+
+.candidate-info h4{
+
+    margin-bottom:6px;
+
+    font-size:18px;
+
+}
+
+.candidate-info p{
+
+    color:var(--text2);
+
+    font-size:14px;
+
+}
+
+.candidate-score{
+
+    min-width:80px;
+
+    text-align:center;
+
+    padding:10px 18px;
+
+    border-radius:12px;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+    color:#fff;
+
+    box-shadow:0 8px 25px rgba(79,124,255,.25);
+
+}
+
+/* ==========================================================
+   Dashboard Insights
+   ========================================================== */
+
+.dashboard-insights{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.insight-card{
+
+    min-height:320px;
+
+}
+
+.insight-card h3{
+
+    margin-bottom:25px;
+
+    font-size:24px;
+
+}
+
+.insight-card ul{
+
+    list-style:none;
+
+}
+
+.insight-card li{
+
+    position:relative;
+
+    padding-left:28px;
+
+    margin-bottom:20px;
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+.insight-card li::before{
+
+    content:"✓";
+
+    position:absolute;
+
+    left:0;
+
+    color:var(--success);
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   System Status
+   ========================================================== */
+
+.status-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.status-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:16px 18px;
+
+    border-radius:16px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.status-row span:first-child{
+
+    font-weight:500;
+
+}
+
+/* ==========================================================
+   Recent Activity
+   ========================================================== */
+
+.activity-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.activity-item{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding-bottom:18px;
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+}
+
+.activity-item:last-child{
+
+    border-bottom:none;
+
+    padding-bottom:0;
+
+}
+
+.activity-dot{
+
+    width:14px;
+
+    height:14px;
+
+    margin-top:8px;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+    box-shadow:0 0 15px var(--success);
+
+    animation:pulse 2s infinite;
+
+}
+
+.activity-item h4{
+
+    margin-bottom:6px;
+
+    font-size:17px;
+
+}
+
+.activity-item p{
+
+    color:var(--text2);
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Analytics Summary Cards
+   ========================================================== */
+
+.analytics-summary{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+    margin-bottom:35px;
+
+}
+
+.summary-card{
+
+    padding:24px;
+
+    border-radius:20px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+}
+
+.summary-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(79,124,255,.35);
+
+}
+
+.summary-card h5{
+
+    color:var(--text2);
+
+    font-size:14px;
+
+    margin-bottom:12px;
+
+}
+
+.summary-card h2{
+
+    font-size:30px;
+
+    margin-bottom:10px;
+
+}
+
+.summary-card small{
+
+    color:var(--success);
+
+    font-weight:600;
+
+}
+
+/* ==========================================================
+   Progress Bars
+   ========================================================== */
+
+.progress-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:22px;
+
+}
+
+.progress-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+.progress-item .label{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    font-size:15px;
+
+}
+
+.progress{
+
+    width:100%;
+
+    height:10px;
+
+    overflow:hidden;
+
+    border-radius:100px;
+
+    background:rgba(255,255,255,.08);
+
+}
+
+.progress-fill{
+
+    height:100%;
+
+    border-radius:100px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+}
+
+/* ==========================================================
+   Chart Containers
+   ========================================================== */
+
+.chart-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.chart-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+
+    height:180px;
+
+    top:-80px;
+
+    right:-80px;
+
+    border-radius:50%;
+
+    background:rgba(79,124,255,.12);
+
+    filter:blur(40px);
+
+}
+
+/* ==========================================================
+   Card Footer
+   ========================================================== */
+
+.card-footer{
+
+    margin-top:20px;
+
+    padding-top:18px;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.card-footer small{
+
+    color:var(--text2);
+
+}
+
+.card-footer a{
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.card-footer a:hover{
+
+    color:#fff;
+
+}
+
+/* ==========================================================
+   Live Status Badge
+   ========================================================== */
+
+.live-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 14px;
+
+    border-radius:100px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:var(--success);
+
+    background:rgba(0,217,139,.12);
+
+    border:1px solid rgba(0,217,139,.25);
+
+}
+
+.live-badge::before{
+
+    content:"";
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:var(--success);
+
+    animation:pulse 2s infinite;
+
+}
+
+/* ==========================================================
+   Divider
+   ========================================================== */
+
+.dashboard-divider{
+
+    width:100%;
+
+    height:1px;
+
+    margin:35px 0;
+
+    background:rgba(255,255,255,.08);
+
+}
+/* ==========================================================
+   Candidate Table
+   ========================================================== */
+
+.table-responsive{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    border-radius:20px;
+
+}
+
+.candidate-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:900px;
+
+}
+
+.candidate-table thead{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.candidate-table th{
+
+    text-align:left;
+
+    padding:18px 20px;
+
+    color:var(--text);
+
+    font-size:15px;
+
+    font-weight:700;
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.candidate-table td{
+
+    padding:18px 20px;
+
+    color:var(--text2);
+
+    border-bottom:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+
+}
+
+.candidate-table tbody tr{
+
+    transition:.35s;
+
+}
+
+.candidate-table tbody tr:hover{
+
+    background:rgba(255,255,255,.05);
+
+}
+
+.candidate-table tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+/* ==========================================================
+   Recommendation Badge
+   ========================================================== */
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:8px 16px;
+
+    border-radius:100px;
+
+    font-size:13px;
+
+    font-weight:700;
+
+}
+
+.badge-success{
+
+    background:rgba(0,217,139,.15);
+
+    color:var(--success);
+
+    border:1px solid rgba(0,217,139,.25);
+
+}
+
+.badge-warning{
+
+    background:rgba(255,200,87,.15);
+
+    color:var(--warning);
+
+    border:1px solid rgba(255,200,87,.25);
+
+}
+
+.badge-danger{
+
+    background:rgba(255,93,115,.15);
+
+    color:var(--danger);
+
+    border:1px solid rgba(255,93,115,.25);
+
+}
+
+/* ==========================================================
+   Candidate Action Buttons
+   ========================================================== */
+
+.table-actions{
+
+    display:flex;
+
+    gap:10px;
+
+}
+
+.icon-btn{
+
+    width:40px;
+
+    height:40px;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.06);
+
+    transition:.3s;
+
+}
+
+.icon-btn:hover{
+
+    transform:translateY(-3px);
+
+    background:rgba(79,124,255,.25);
+
+}
+
+/* ==========================================================
+   Filter Controls
+   ========================================================== */
+
+.header-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.header-actions select{
+
+    padding:12px 16px;
+
+    border:none;
+
+    outline:none;
+
+    border-radius:14px;
+
+    color:#fff;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+.header-actions select option{
+
+    background:#12182f;
+
+    color:#fff;
+
+}
+
+/* ==========================================================
+   Quick Actions
+   ========================================================== */
+
+.quick-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.action-card{
+
+    padding:26px;
+
+    border-radius:22px;
+
+    text-align:center;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    transition:.35s;
+
+    cursor:pointer;
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(79,124,255,.35);
+
+}
+
+.action-icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:0 auto 20px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(79,124,255,.2),
+
+        rgba(124,92,255,.2)
+
+    );
+
+}
+
+.action-card h4{
+
+    margin-bottom:10px;
+
+}
+
+.action-card p{
+
+    color:var(--text2);
+
+    line-height:1.7;
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Notification Panel
+   ========================================================== */
+
+.notification-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.notification-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.04);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    transition:.3s;
+
+}
+
+.notification-item:hover{
+
+    background:rgba(255,255,255,.07);
+
+}
+
+.notification-icon{
+
+    width:50px;
+
+    height:50px;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:22px;
+
+    background:rgba(79,124,255,.18);
+
+}
+
+.notification-item h4{
+
+    margin-bottom:5px;
+
+}
+
+.notification-item p{
+
+    color:var(--text2);
+
+    font-size:14px;
+
+}
+
+/* ==========================================================
+   Upload Resume Modal
+   ========================================================== */
+
+#uploadForm{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+#uploadForm input[type="file"]{
+
+    width:100%;
+
+    padding:18px;
+
+    border-radius:16px;
+
+    color:#fff;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px dashed rgba(255,255,255,.18);
+
+}
+
+#uploadForm input[type="file"]::file-selector-button{
+
+    margin-right:18px;
+
+    padding:10px 18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    color:#fff;
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--secondary)
+
+    );
+
+}
+
+/* ==========================================================
+   Empty State
+   ========================================================== */
+
+.empty-state{
+
+    text-align:center;
+
+    padding:70px 30px;
+
+}
+
+.empty-state h3{
+
+    margin:20px 0 12px;
+
+}
+
+.empty-state p{
+
+    color:var(--text2);
+
+}
+
+/* ==========================================================
+   Loading Skeleton
+   ========================================================== */
+
+.table-skeleton{
+
+    height:60px;
+
+    margin-bottom:12px;
+
+    border-radius:14px;
+
+    background:linear-gradient(
+
+        90deg,
+
+        rgba(255,255,255,.04),
+
+        rgba(255,255,255,.12),
+
+        rgba(255,255,255,.04)
+
+    );
+
+    background-size:500px 100%;
+
+    animation:shimmer 1.6s infinite;
+
+}
+
+/* ==========================================================
+   Dashboard Footer
+   ========================================================== */
+
+.dashboard-footer{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:var(--text2);
+
+    padding:25px;
+
+    border-top:1px solid rgba(255,255,255,.06);
+
+}
+/* ==========================================================
+   Dashboard Responsive
+   ========================================================== */
+
+@media (max-width:1400px){
+
+    .dashboard-layout{
+
+        grid-template-columns:240px 1fr;
+
+    }
+
+    .dashboard-main{
+
+        padding:28px;
+
+    }
+
+    .dashboard-cards{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+    .charts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-insights{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+/* ==========================================================
+   Tablet
+   ========================================================== */
+
+@media (max-width:1024px){
+
+    .dashboard-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .sidebar{
+
+        position:relative;
+
+        height:auto;
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .sidebar-nav{
+
+        flex-direction:row;
+
+        flex-wrap:wrap;
+
+        justify-content:center;
+
+    }
+
+    .dashboard-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+    }
+
+    .header-actions{
+
+        width:100%;
+
+        flex-wrap:wrap;
+
+    }
+
+    .search-box{
+
+        flex:1;
+
+        width:100%;
+
+    }
+
+    .search-box input{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   Mobile
+   ========================================================== */
+
+@media (max-width:768px){
+
+    .dashboard-main{
+
+        padding:20px;
+
+    }
+
+    .dashboard-banner{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:20px;
+
+    }
+
+    .dashboard-cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .charts-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .dashboard-insights{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .quick-actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .candidate-table{
+
+        min-width:700px;
+
+    }
+
+    .leaderboard-item{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .candidate-score{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   Small Mobile
+   ========================================================== */
+
+@media (max-width:480px){
+
+    .dashboard-header h1{
+
+        font-size:28px;
+
+    }
+
+    .dashboard-banner h2{
+
+        font-size:28px;
+
+    }
+
+    .kpi-card{
+
+        flex-direction:column;
+
+        gap:20px;
+
+        text-align:center;
+
+    }
+
+    .glass-card{
+
+        padding:20px;
+
+    }
+
+    .card-header{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:15px;
+
+    }
+
+    .header-actions{
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+    }
+
+    .header-actions button,
+
+    .header-actions select{
+
+        width:100%;
+
+    }
+
+}
+
+/* ==========================================================
+   Scrollbar
+   ========================================================== */
+
+.table-responsive::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-responsive::-webkit-scrollbar-thumb{
+
+    background:rgba(79,124,255,.45);
+
+    border-radius:100px;
+
+}
+
+/* ==========================================================
+   Hover Utilities
+   ========================================================== */
+
+.kpi-card,
+
+.chart-card,
+
+.glass-card,
+
+.action-card,
+
+.notification-item,
+
+.leaderboard-item{
+
+    transition:
+
+        transform .35s ease,
+
+        box-shadow .35s ease,
+
+        border-color .35s ease;
+
+}
+
+.kpi-card:hover,
+
+.chart-card:hover,
+
+.glass-card:hover{
+
+    box-shadow:
+
+        0 20px 45px rgba(0,0,0,.35);
+
+}
+
+/* ==========================================================
+   Focus Accessibility
+   ========================================================== */
+
+button:focus-visible,
+
+input:focus-visible,
+
+select:focus-visible{
+
+    outline:2px solid var(--accent);
+
+    outline-offset:3px;
+
+}
+
+/* ==========================================================
+   Loading State
+   ========================================================== */
+
+.loading{
+
+    opacity:.6;
+
+    pointer-events:none;
+
+}
+
+.loading::after{
+
+    content:"";
+
+    display:inline-block;
+
+    width:18px;
+
+    height:18px;
+
+    margin-left:10px;
+
+    border-radius:50%;
+
+    border:2px solid rgba(255,255,255,.25);
+
+    border-top-color:var(--accent);
+
+    animation:rotate 1s linear infinite;
+
+}
+
+/* ==========================================================
+   Success / Warning / Error Cards
+   ========================================================== */
+
+.card-success{
+
+    border-left:4px solid var(--success);
+
+}
+
+.card-warning{
+
+    border-left:4px solid var(--warning);
+
+}
+
+.card-danger{
+
+    border-left:4px solid var(--danger);
+
+}
+
+/* ==========================================================
+   Gradient Titles
+   ========================================================== */
+
+.gradient-title{
+
+    background:linear-gradient(
+
+        135deg,
+
+        var(--primary),
+
+        var(--accent)
+
+    );
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    background-clip:text;
+
+}
+
+/* ==========================================================
+   Chart Animation
+   ========================================================== */
+
+.chart-card canvas{
+
+    animation:
+
+        fadeUp .8s ease;
+
+}
+
+/* ==========================================================
+   Glass Glow
+   ========================================================== */
+
+.glass-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    border-radius:inherit;
+
+    pointer-events:none;
+
+    background:linear-gradient(
+
+        135deg,
+
+        rgba(255,255,255,.03),
+
+        transparent,
+
+        rgba(255,255,255,.02)
+
+    );
+
+}
+
+.glass-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+/* ==========================================================
+   Print Support
+   ========================================================== */
+
+@media print{
+
+    .sidebar,
+
+    .header-actions,
+
+    .primary-btn,
+
+    .glass-btn,
+
+    .modal,
+
+    .toast-container{
+
+        display:none !important;
+
+    }
+
+    .dashboard-layout{
+
+        display:block;
+
+    }
+
+    .dashboard-main{
+
+        padding:0;
+
+    }
+
+}
+
+/* ==========================================================
+   Reduced Motion
+   ========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+    }
+
+}
+
+/* ==========================================================
+   End of File
+   ========================================================== */

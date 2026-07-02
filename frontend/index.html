@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>BharatHire • AI Recruitment Platform</title>
+
+    <meta name="description"
+          content="AI Powered Recruitment Platform">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/animations.css">
+
+    <link rel="stylesheet"
+          href="css/responsive.css">
+
+</head>
+
+<body>
+
+<!-- ================================================= -->
+<!-- Loading Screen                                    -->
+<!-- ================================================= -->
+
+<div id="loader">
+
+    <div class="loader-logo">
+
+        <div class="loader-ring"></div>
+
+        <h1>BharatHire</h1>
+
+        <p>AI Recruitment Platform</p>
+
+    </div>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Aurora Background                                 -->
+<!-- ================================================= -->
+
+<div class="aurora">
+
+    <span></span>
+    <span></span>
+    <span></span>
+
+</div>
+
+<!-- ================================================= -->
+<!-- Particle Canvas                                   -->
+<!-- ================================================= -->
+
+<canvas id="particleCanvas"></canvas>
+
+<!-- ================================================= -->
+<!-- Mouse Spotlight                                   -->
+<!-- ================================================= -->
+
+<div id="spotlight"></div>
+
+<!-- ================================================= -->
+<!-- Navigation                                        -->
+<!-- ================================================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+<div class="logo-icon">
+
+AI
+
+</div>
+
+<div>
+
+<h2>BharatHire</h2>
+
+<p>AI Recruitment</p>
+
+</div>
+
+</div>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="#hero">
+
+Home
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#features">
+
+Features
+
+</a>
+
+</li>
+
+<li>
+
+<a href="#workflow">
+
+Workflow
+
+</a>
+
+</li>
+
+<li>
+
+<a href="dashboard.html">
+
+Dashboard
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button class="glass-btn">
+
+Documentation
+
+</button>
+
+<button class="primary-btn"
+        onclick="location.href='dashboard.html'">
+
+Launch Platform
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================================================= -->
+<!-- Hero Section                                      -->
+<!-- ================================================= -->
+
+<section id="hero">
+
+<div class="hero-left">
+
+<div class="hero-badge">
+
+AI Powered Hiring
+
+</div>
+
+<h1>
+
+Hire Smarter.
+
+<br>
+
+Recruit Faster.
+
+<br>
+
+Powered by AI.
+
+</h1>
+
+<p>
+
+BharatHire is an intelligent recruitment platform
+that evaluates resumes using explainable AI,
+hybrid ranking, analytics, behavioral scoring,
+career progression analysis and semantic matching.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="primary-btn"
+onclick="location.href='dashboard.html'">
+
+Open Dashboard
+
+</button>
+
+<button class="glass-btn">
+
+Watch Demo
+
+</button>
+
+</div>
+
+<div class="hero-stats">
+
+<div class="stat-card">
+
+<h2 id="candidateCounter">
+
+0
+
+</h2>
+
+<p>
+
+Candidates
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="accuracyCounter">
+
+0%
+
+</h2>
+
+<p>
+
+Accuracy
+
+</p>
+
+</div>
+
+<div class="stat-card">
+
+<h2 id="recommendationCounter">
+
+0
+
+</h2>
+
+<p>
+
+Elite Matches
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<div class="glass-panel">
+
+<div class="panel-header">
+
+<span class="green-dot"></span>
+
+AI Status
+
+</div>
+
+<div class="status-box">
+
+<div>
+
+<h4>
+
+Backend
+
+</h4>
+
+<p id="backendStatus">
+
+Checking...
+
+</p>
+
+</div>
+
+<div class="status-indicator online"></div>
+
+</div>
+
+<div class="status-box">
+
+<div>
+
+<h4>
+
+Analytics Engine
+
+</h4>
+
+<p>
+
+Running
+
+</p>
+
+</div>
+
+<div class="status-indicator online"></div>
+
+</div>
+
+<div class="status-box">
+
+<div>
+
+<h4>
+
+Hybrid Ranker
+
+</h4>
+
+<p>
+
+Active
+
+</p>
+
+</div>
+
+<div class="status-indicator online"></div>
+
+</div>
+
+<div class="status-box">
+
+<div>
+
+<h4>
+
+Explainability
+
+</h4>
+
+<p>
+
+Enabled
+
+</p>
+
+</div>
+
+<div class="status-indicator online"></div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- Metrics                                           -->
+<!-- ================================================= -->
+
+<section class="metrics">
+
+<div class="section-title">
+
+<h2>
+
+Platform Highlights
+
+</h2>
+
+<p>
+
+Real-time AI-driven recruitment insights.
+
+</p>
+
+</div>
+
+<div class="metric-grid">
+
+<div class="metric-card">
+
+<h3>
+
+100K+
+
+</h3>
+
+<p>
+
+Candidates Processed
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<h3>
+
+7
+
+</h3>
+
+<p>
+
+AI Scoring Engines
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<h3>
+
+99.2%
+
+</h3>
+
+<p>
+
+Pipeline Reliability
+
+</p>
+
+</div>
+
+<div class="metric-card">
+
+<h3>
+
+Explainable
+
+</h3>
+
+<p>
+
+Transparent AI Decisions
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- Features                                          -->
+<!-- ================================================= -->
+
+<section id="features">
+
+<div class="section-title">
+
+<h2>
+
+Powerful AI Features
+
+</h2>
+
+<p>
+
+Everything needed for modern intelligent hiring.
+
+</p>
+
+</div>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🧠
+
+</div>
+
+<h3>
+
+Hybrid AI Ranking
+
+</h3>
+
+<p>
+
+Multiple AI engines collaborate
+to produce highly accurate candidate scores.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+📈
+
+</div>
+
+<h3>
+
+Analytics Dashboard
+
+</h3>
+
+<p>
+
+Real-time hiring analytics,
+leaderboards and recommendation insights.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🎯
+
+</div>
+
+<h3>
+
+Explainable AI
+
+</h3>
+
+<p>
+
+Every recommendation is backed
+by interpretable AI explanations.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+⚡
+
+</div>
+
+<h3>
+
+Fast Processing
+
+</h3>
+
+<p>
+
+Optimized ranking pipeline
+capable of processing large datasets efficiently.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🔍
+
+</div>
+
+<h3>
+
+Semantic Matching
+
+</h3>
+
+<p>
+
+Understands skills and experience
+beyond simple keyword matching.
+
+</p>
+
+</div>
+
+<div class="feature-card">
+
+<div class="feature-icon">
+
+🛡️
+
+</div>
+
+<h3>
+
+Risk Analysis
+
+</h3>
+
+<p>
+
+Identify potential hiring concerns
+before interviews begin.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================================================= -->
+<!-- Workflow                                           -->
+<!-- ================================================= -->
+
+<section id="workflow" class="workflow">
+
+    <div class="section-title">
+
+        <h2>How BharatHire Works</h2>
+
+        <p>
+            AI-powered recruitment pipeline from job description to
+            explainable candidate recommendations.
+        </p>
+
+    </div>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">01</div>
+
+            <div class="timeline-content">
+
+                <h3>Upload Job Description</h3>
+
+                <p>
+                    Recruiters upload a job description which becomes the
+                    foundation for intelligent evaluation.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">02</div>
+
+            <div class="timeline-content">
+
+                <h3>Candidate Processing</h3>
+
+                <p>
+                    BharatHire processes resumes, experience, projects,
+                    assessments and recruiter signals.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">03</div>
+
+            <div class="timeline-content">
+
+                <h3>Hybrid AI Evaluation</h3>
+
+                <p>
+                    Skill, Experience, Career, Behaviour, Industry,
+                    Assessment and Risk Engines collaborate to produce
+                    accurate rankings.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="timeline-item">
+
+            <div class="timeline-number">04</div>
+
+            <div class="timeline-content">
+
+                <h3>Explainable Recommendations</h3>
+
+                <p>
+                    Every recommendation includes confidence scores,
+                    strengths, concerns and transparent reasoning.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- API Preview                                        -->
+<!-- ================================================= -->
+
+<section class="api-preview">
+
+    <div class="section-title">
+
+        <h2>Connected Backend</h2>
+
+        <p>
+            Your FastAPI backend powers the entire platform in real time.
+        </p>
+
+    </div>
+
+    <div class="api-grid">
+
+        <div class="api-card">
+
+            <h3>Platform Status</h3>
+
+            <p id="homeStatus">Waiting...</p>
+
+        </div>
+
+        <div class="api-card">
+
+            <h3>Analytics</h3>
+
+            <p id="analyticsStatus">Waiting...</p>
+
+        </div>
+
+        <div class="api-card">
+
+            <h3>Top Candidate</h3>
+
+            <p id="topCandidate">Loading...</p>
+
+        </div>
+
+        <div class="api-card">
+
+            <h3>Average Score</h3>
+
+            <p id="averageScore">--</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- CTA                                                -->
+<!-- ================================================= -->
+
+<section class="cta">
+
+    <div class="cta-box">
+
+        <h2>
+
+            Ready to transform recruitment?
+
+        </h2>
+
+        <p>
+
+            Experience explainable AI hiring with BharatHire.
+
+        </p>
+
+        <div class="cta-buttons">
+
+            <button class="primary-btn"
+                    onclick="location.href='dashboard.html'">
+
+                Launch Dashboard
+
+            </button>
+
+            <button class="glass-btn">
+
+                Documentation
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================================================= -->
+<!-- Footer                                             -->
+<!-- ================================================= -->
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div>
+
+            <h3>BharatHire</h3>
+
+            <p>
+
+                Intelligent AI Recruitment Platform built for
+                modern hiring teams.
+
+            </p>
+
+        </div>
+
+        <div>
+
+            <h4>Platform</h4>
+
+            <ul>
+
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>Resources</h4>
+
+            <ul>
+
+                <li>API</li>
+                <li>Documentation</li>
+                <li>Analytics</li>
+
+            </ul>
+
+        </div>
+
+        <div>
+
+            <h4>AI Engines</h4>
+
+            <ul>
+
+                <li>Skill Engine</li>
+                <li>Experience Engine</li>
+                <li>Career Engine</li>
+                <li>Risk Engine</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        © 2026 BharatHire • AI Recruitment Platform
+
+    </div>
+
+</footer>
+
+<!-- ================================================= -->
+<!-- Scroll To Top                                     -->
+<!-- ================================================= -->
+
+<button id="scrollTop">
+
+    ↑
+
+</button>
+
+<!-- ================================================= -->
+<!-- Scripts                                            -->
+<!-- ================================================= -->
+
+<script src="js/api.js"></script>
+
+<script src="js/particles.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>

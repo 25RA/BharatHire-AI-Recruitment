@@ -1,0 +1,48 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual Environment
+.venv/
+venv/
+env/
+
+# Environment Variables
+.env
+.env.*
+
+# Logs
+logs/*.log
+
+# Cache
+outputs/cache/
+outputs/submissions/
+outputs/reports/
+
+# Ignore trained models (large files)
+models/trained/
+models/faiss/
+models/embeddings/
+
+# Ignore processed datasets
+data/cache/
+data/processed/
+data/intermediate/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Hackathon reference documents
+README.docx
+job_description.docx
+redrob_signals_doc.docx
+submission_spec.docx
+
+# Hackathon dataset
+candidates.jsonl
